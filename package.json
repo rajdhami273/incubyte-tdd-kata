@@ -1,0 +1,41 @@
+{
+  "name": "incubytekata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --testPathPattern=src/__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajdhami273/incubyte-tdd-kata.git"
+  },
+  "author": "Rajendra Dhami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajdhami273/incubyte-tdd-kata/issues"
+  },
+  "homepage": "https://github.com/rajdhami273/incubyte-tdd-kata#readme",
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.1",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "typescript": "^4.6.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx)"
+    ]
+  }
+}
