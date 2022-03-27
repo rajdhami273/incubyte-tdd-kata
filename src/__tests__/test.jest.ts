@@ -22,3 +22,9 @@ test("Should give sum of all numbers separated by delimeter", () => {
   expect(stringCalculator.Add("//;\n1;2,\n3;4;\n5;6")).toBe(21);
   expect(stringCalculator.Add("//;\n1;2")).toBe(3);
 });
+
+test("Should throw an error for negative number", () => {
+  // const stringCalculator = new StringCalculator();
+  expect(stringCalculator.Add("//;\n1;2,\n3;-4;\n5;6")).toBe(false);
+  expect(stringCalculator.Add("//;\n1;2")).toBe(3);
+});
