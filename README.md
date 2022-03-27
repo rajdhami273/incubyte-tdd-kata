@@ -3,6 +3,8 @@
 ### Open terminal in the root folder and run following commands
 
 ```
+ git clone https://github.com/rajdhami273/incubyte-tdd-kata.git
+ git checkout master
  npm install
  npm run test
 ```
